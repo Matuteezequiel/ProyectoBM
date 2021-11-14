@@ -37,14 +37,12 @@
 /* body */
 html body{
     height: 100%;
-    background: #333;
+    background-image: url(/imagenes/backgraound.png);
     color: white;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin
-    
     margin: 0;
     padding: 0;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
@@ -123,7 +121,12 @@ html body{
     opacity: .6;
 }
 
-                                                                       /* cards */
+h2{
+    background: #ff3333;
+    text-align: center;
+}
+
+/* cards */
 .contenedorCards{
     width: 100%;
     max-width: 1200px;
@@ -132,6 +135,7 @@ html body{
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    margin-bottom: 100px;
 }
 .contenedorCards .card{
     width: 330px;
@@ -285,8 +289,4 @@ footer{
 .login-box a:hover{
     color: white;
 }
-
-
-/* sacar el position del footer y bottom, bajar tamaño de letra al footer. segmentar pagina.  */
-
 

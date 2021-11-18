@@ -88,24 +88,37 @@ html body{
 
 .ajusteBanner{
     max-width: 100% !important;
+    background-image: url(/imagenes/6.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 @keyframes banner {
     0%, 18%{
         background-image: url(/imagenes/cer.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     20%, 38%{
         background-image: url(/imagenes/gin.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     40%, 58%{
         background-image: url(/imagenes/lim.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     60%, 78%{
         background-image: url(/imagenes/wis.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     80%, 98%{
         background-image: url(/imagenes/abs.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
     
@@ -155,15 +168,25 @@ html body{
     font-size: 50px;
 }
 
-                                                                                     /* cards */
+                                                                                 /* combos */
+.descripProduct{
+    background:rgba(0, 0, 0, 0.7 );
+    width: 100%;
+    text-align: center ;
+    border-radius: 10px;
+    min-height: 150px;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .grid-container {
   display: grid;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  /* background-color: #2196F3; */
-  /* padding: 10px; */
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -181,58 +204,6 @@ html body{
   background-position:center;
 }
 
-.contenedorCards{
-    width: 80%;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 100px;
-}
-
-.contenedorCards .card{
-    width:21%;
-    border-radius: 8px;
-    box-shadow: 0 2px rgba(0, 0, 0, 0.2 );
-    overflow: hidden;
-    background: #ff3333;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s;
-}
-
-.contenedorCards .card:hover{
-    transform: translateY(-15px);
-    box-shadow: rgba(0, 0, 0, 0.2 );
-}
-
-.card{
-    width: 10%;
-}
-
-.imagen{
-    width: 104%;
-}
-
-.imagenProducto{
-    position: absolute;
-}
-
-.descripProduct{
-    background:rgba(0, 0, 0, 0.7 );
-    width: 100%;
-    text-align: center ;
-    border-radius: 10px;
-    min-height: 150px;
-    flex: 1;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* padding-top: 15px; */
-    /* padding-bottom: 10px; */
-}
 
 .grid1{
     background-image: url(/imagenes/1.jfif);
@@ -300,10 +271,6 @@ html body{
     color: #fff;
 }
 
-.contenedorCards .card h4{
-    font-weight: 600;
-}
-
 .bebida{
     /* padding: 0 1rem; */
     color: #ff3333;
@@ -314,7 +281,7 @@ html body{
 .precio{
     font-weight: 500;
     text-decoration: none;
-    color: #3498db;
+    color: #bdbdbd;
     font-size: 25px;
 }
 
@@ -550,7 +517,6 @@ textarea{
     .login-box{
         width: 90% !important;
     }
-
 }
 
 @media only screen and (max-width: 900px){
@@ -561,7 +527,10 @@ textarea{
         width: 70%;
     }
     .contenedorContacto{
-        width: 70%;
+        width: 80%;
+    }
+    .ajusteBanner{
+        width: 70% !important;
     }
 
 }
